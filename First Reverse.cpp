@@ -8,7 +8,7 @@ string FirstReverse(string str) {
   // starting from the back
   string reversedString = "";
   for(int i = str.length() - 1; i >= 0; i--)
-    reversedString = reversedString + str[i];
+    reversedString += str[i];
   return reversedString; 
             
 }
