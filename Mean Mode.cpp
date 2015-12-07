@@ -2,10 +2,9 @@
 #include <algorithm>
 using namespace std;
 
-int MeanMode(int arr[]) { 
+int MeanMode(int arr[], int numElements) { 
 
-  // code goes here 
-  int numElements = sizeof(arr)/sizeof(arr[0]);
+  // code goes here
   int sum = 0;
   int max = 1;
   int count = 1;
@@ -51,7 +50,7 @@ int main() {
      To see how to enter arrays as arguments in C++ scroll down */
      
   int A[] = gets(stdin);
-  cout << MeanMode(A);
+  cout << MeanMode(A, sizeof(A)/sizeof(*A));
   return 0;
     
 }           
